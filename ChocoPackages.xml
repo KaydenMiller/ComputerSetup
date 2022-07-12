@@ -1,46 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <packages>
 	<!-- General Packages -->
-	<package id="googlechrome"/>
+	<package id="GoogleChrome"/>
+	<package id="geforce-experience"/>
+	<package id="lastpass"/>
+	<package id="coretemp"/>
 	<package id="firefox"/>
-	<package id="7zip"/>
-	<package id="notepadplusplus"/>
 	<package id="putty"/>
 	<package id="windirstat"/>
-	<package id="filezila"/>
-	<package id="paint.net"/>
-	<package id="gimp"/>
-	<package id="thunderbird"/>
-	<package id="audacity"/>
 	<package id="steam"/>
 	<package id="speccy"/>
-	<package id="sharex"/>
 	<package id="discord"/>
 	<package id="slack"/>
-	<package id="origin"/>
-	<package id="uplay"/>
-	<package id="ccleaner"/>
 	
 	<!-- General Software Packages -->
-	<package id="python"/>
+	<package id="oh-my-posh"/>
+	<package id="powershell-core"/>
+	<package id="jetbrainstoolbox"/>
+	<package id="docker-desktop"/>
+	<package id="nvm"/>
 	<package id="git"/>
 	<package id="nodejs"/>
-	<package id="nginx"/>
-	<package id="redis"/>
-	<package id="redis-desktop-manager"/>
 	<package id="vscode"/>
 	<package id="vim"/>
 	<package id="cmake"/>
-	<package id="docker-cli"/>
-	<package id="androidstudio"/>
-	<package id="mongodb"/>
 	<package id="plantuml"/>
 	<package id="composer"/>
 	<package id="sass"/>
+	<package id="notepadplusplus"/>
+	<package id="redis-desktop-manager"/>
+	<package id="python"/>
 	
 	<!-- .NET Packages -->
-	<package id="dotnetcore"/>
+	<package id="dotnet-5.0-sdk-3xx"/>
+	<package id="dotnet-6.0-sdk"/>
 	
-	<!-- Weg Packages -->
+	<!-- Optional Packages -->
 	<package id="php"/>
+	<package id="paint.net"/>
+	<package id="gimp"/>
+	<package id="uplay"/>
+	<package id="origin"/>
+	<package id="ccleaner"/>
+	<package id="sharex"/>
+	<package id="thunderbird"/>
+	<package id="audacity"/>
+	<package id="filezila"/>
+	<package id="7zip"/>
 </packages>
