@@ -5,11 +5,11 @@ function work()
 {
     param([switch]$root);
 
-    $location = "F:\";
+    $location = "D:\";
 
     if (!$root)
     {
-        $location += "personal\";
+        $location += "workspaces\";
     }
 
     Set-Location $location;
