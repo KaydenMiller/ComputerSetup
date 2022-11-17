@@ -1,0 +1,19 @@
+let mapleader = " "
+
+set scrolloff=8
+set scroll=10
+set relativenumber
+set number
+set showmode
+set NERDTree
+sethandler <C-C> a:ide
+sethandler <C-V> a:ide
+sethandler <C-X> a:ide
+sethandler <C-D> a:ide
+sethandler <C-T> a:ide
+sethandler <C-K> a:ide
+sethandler <C-s> a:ide
+
+nmap <leader>o :NERDTree<CR>
+
+nnoremap <leader>t :action ActivateTerminalToolWindow<CR>
