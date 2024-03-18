@@ -1,11 +1,14 @@
 let mapleader = " "
 
+" Example: https://gist.github.com/ericvanjohnson/079ae871e156054d3779e8f1efd8375d
+" Actions: https://gist.github.com/zchee/9c78f91cc5ad771c1f5d
+
 set scrolloff=8
-set scroll=10
 set relativenumber
 set number
-set showmode
+set scroll=10
 set NERDTree
+set hlsearch
 sethandler <C-C> a:ide
 sethandler <C-V> a:ide
 sethandler <C-X> a:ide
@@ -17,3 +20,7 @@ sethandler <C-s> a:ide
 nmap <leader>o :NERDTree<CR>
 
 nnoremap <leader>t :action ActivateTerminalToolWindow<CR>
+nnoremap <leader>f :action ReformatCode<CR>
+nnoremap <leader>fo :action SelectIn<CR>1<CR>
+nnoremap <leader>b :action ToggleLineBreakpoint<CR>
+nnoremap <leader>g :action GotoDeclaration<CR>
