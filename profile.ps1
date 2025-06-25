@@ -1,5 +1,38 @@
-#oh-my-posh --init --shell pwsh --config ~/AppData/Local/Programs/oh-my-posh/themes/powerlevel10k_modern.omp.json | Invoke-Expression
 oh-my-posh --init --shell pwsh --config ~/AppData/Local/Programs/oh-my-posh/themes/atomic.omp.json | Invoke-Expression
+
+set-alias k kubectl
+
+$version = $PSVersionTable
+
+function touch {
+    wsl touch -- $args
+}
+
+# CSHARP REPL
+function cs {
+    csharprepl -r "nuget: System.Text.Json" -u "System.Text.Json" -r "nuget: Flurl.Http" -u "Flurl" -u "Flurl.Http"
+}
+
+# MINIKUBE CONFIG
+function k {
+    minikube kubectl -- $args
+}
+
+# ATOMICFI CONFIG
+
+$PACKAGES_ACCESS_TOKEN="<CONFIGURE_ME>";
+
+
+# END ATOMICFI CONFIG
+
+$XDG_CONFIG_HOME="D:\.config";
+#$Env:PATH="$PYENV_ROOT/versions/3.5.3/bin:$Env:PATH"
+
+function eve()
+{
+    $command = "~/bin/smt/SMT.exe"
+    Invoke-Expression $command
+}
 
 function work()
 {
@@ -22,7 +55,7 @@ function Install-Font
         [Parameter(Mandatory = $true)][ValidateNotNullOrEmpty()][System.IO.FileInfo]$FontFile
     )
 
-    #Get Font Name from the File's Extended Attributes  
+    #Get Font Name from the File's Extended Attributes
     $oShell = new-object -com shell.application
     $Folder = $oShell.namespace($FontFile.DirectoryName)
     $Item = $Folder.Items().Item($FontFile.Name)
@@ -41,7 +74,7 @@ function Install-Font
         $Copy = $true
         Write-Host ('Copying' + [char]32 + $FontFile.Name + '.....') -NoNewline
         Copy-Item -Path $fontFile.FullName -Destination ("C:\Windows\Fonts\" + $FontFile.Name) -Force
-        #Test if font is copied over  
+        #Test if font is copied over
         If ((Test-Path ("C:\Windows\Fonts\" + $FontFile.Name)) -eq $true)
         {
             Write-Host ('Success') -Foreground Yellow
@@ -51,10 +84,10 @@ function Install-Font
             Write-Host ('Failed') -ForegroundColor Red
         }
         $Copy = $false
-        #Test if font registry entry exists  
+        #Test if font registry entry exists
         If ((Get-ItemProperty -Name $FontName -Path "HKLM:\Software\Microsoft\Windows NT\CurrentVersion\Fonts" -ErrorAction SilentlyContinue) -ne $null)
         {
-            #Test if the entry matches the font file name  
+            #Test if the entry matches the font file name
             If ((Get-ItemPropertyValue -Name $FontName -Path "HKLM:\Software\Microsoft\Windows NT\CurrentVersion\Fonts") -eq $FontFile.Name)
             {
                 Write-Host ('Adding' + [char]32 + $FontName + [char]32 + 'to the registry.....') -NoNewline
@@ -116,7 +149,7 @@ function Install-Fonts()
     param([string]$path);
     $path = Resolve-Path -Relative $path;
     Write-Output $path;
-    #Get a list of all font files relative to this script and parse through the list  
+    #Get a list of all font files relative to this script and parse through the list
     $fonts = (Get-ChildItem -Path $PSScriptRoot | Where-Object {
         ($_.Name -like '*.ttf') -or ($_.Name -like '*.OTF')
     })
@@ -125,6 +158,6 @@ function Install-Fonts()
     foreach ($FontItem in $fonts)
     {
         Write-Output $FontItem
-#        Install-Font -FontFile $FontItem
+        #        Install-Font -FontFile $FontItem
     }
 }
