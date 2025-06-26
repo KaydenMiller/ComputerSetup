@@ -72,6 +72,8 @@ Invoke-WebRequest -Uri "https://github.com/Proopai/eve-o-preview/releases/downlo
 Expand-Archive -Path "~/Downloads/eve-o-preview.zip" -DestinationPath "~/bin/eve-o-preview/"
 Invoke-WebRequest -Uri "https://github.com/EVEIPH/LatestFiles/raw/master/EVEIPH%20Binaries.zip" -OutFile "~/Downloads/eve-iph.zip"
 Expand-Archive -Path "~/Downloads/eve-iph.zip" -DestinationPath "~/bin/eve-iph/"
+Invoke-WebRequest -Uri "https://github.com/pyfa-org/Pyfa/releases/download/v2.63.1/pyfa-v2.63.1-win.zip" -OutFile "~/Downloads/pyfa.zip"
+Expand-Archive -Path "~/Downloads/pyfa.zip" -DestinationPath "~/bin/pyfa/"
 
 ### DCS
 winget install -e --id EagleDynamics.DCSWorldOpenBeta --accept-source-agreements --authentication-mode silent
