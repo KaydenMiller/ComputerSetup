@@ -70,6 +70,8 @@ Invoke-WebRequest -Uri "https://github.com/Slazanger/SMT/releases/download/SMT_1
 Expand-Archive -Path "~/Downloads/SMT.zip" -DestinationPath "~/bin/smt/"
 Invoke-WebRequest -Uri "https://github.com/Proopai/eve-o-preview/releases/download/8.0.2.1/Release-8.0.2.1-Windows.zip" -OutFile "~/Downloads/eve-o-preview.zip"
 Expand-Archive -Path "~/Downloads/eve-o-preview.zip" -DestinationPath "~/bin/eve-o-preview/"
+Invoke-WebRequest -Uri "https://github.com/EVEIPH/LatestFiles/raw/master/EVEIPH%20Binaries.zip" -OutFile "~/Downloads/eve-iph.zip"
+Expand-Archive -Path "~/Downloads/eve-iph.zip" -DestinationPath "~/bin/eve-iph/"
 
 ### DCS
 winget install -e --id EagleDynamics.DCSWorldOpenBeta --accept-source-agreements --authentication-mode silent
