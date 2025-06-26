@@ -68,6 +68,7 @@ winget install -e --id Blizzard.BattleNet --source-agreements --authentication-m
 winget install -e --id CCPGames.EVEOnline --accept-source-agreements --authentication-mode silent
 winget install -e --id Pidgin.Pidgin --accept-source-agreements --authentication-mode silent
 winget install -e --id Mumble.Mumble.Client --accept-source-agreements --authentication-mode silent
+winget install -e --id 9NR1KCK86LP3 --accept-source-agreements --authentication-mode silent # RIFT Intel Tool
 Invoke-WebRequest -Uri "https://github.com/Slazanger/SMT/releases/download/SMT_141/SMT_1.41a.zip" -OutFile "~/Downloads/SMT.zip"
 Expand-Archive -Path "~/Downloads/SMT.zip" -DestinationPath "~/bin/smt/"
 Invoke-WebRequest -Uri "https://github.com/Proopai/eve-o-preview/releases/download/8.0.2.1/Release-8.0.2.1-Windows.zip" -OutFile "~/Downloads/eve-o-preview.zip"
