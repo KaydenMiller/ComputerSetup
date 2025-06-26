@@ -66,6 +66,8 @@ winget install -e --id Blizzard.BattleNet --source-agreements --authentication-m
 
 ### EVE ONLINE
 winget install -e --id CCPGames.EVEOnline --accept-source-agreements --authentication-mode silent
+winget install -e --id Pidgin.Pidgin --accept-source-agreements --authentication-mode silent
+winget install -e --id Mumble.Mumble.Client --accept-source-agreements --authentication-mode silent
 Invoke-WebRequest -Uri "https://github.com/Slazanger/SMT/releases/download/SMT_141/SMT_1.41a.zip" -OutFile "~/Downloads/SMT.zip"
 Expand-Archive -Path "~/Downloads/SMT.zip" -DestinationPath "~/bin/smt/"
 Invoke-WebRequest -Uri "https://github.com/Proopai/eve-o-preview/releases/download/8.0.2.1/Release-8.0.2.1-Windows.zip" -OutFile "~/Downloads/eve-o-preview.zip"
@@ -74,6 +76,8 @@ Invoke-WebRequest -Uri "https://github.com/EVEIPH/LatestFiles/raw/master/EVEIPH%
 Expand-Archive -Path "~/Downloads/eve-iph.zip" -DestinationPath "~/bin/eve-iph/"
 Invoke-WebRequest -Uri "https://github.com/pyfa-org/Pyfa/releases/download/v2.63.1/pyfa-v2.63.1-win.zip" -OutFile "~/Downloads/pyfa.zip"
 Expand-Archive -Path "~/Downloads/pyfa.zip" -DestinationPath "~/bin/pyfa/"
+Invoke-WebRequest -Uri "https://github.com/slysmoke/evernus/archive/refs/tags/v4.53.zip" -OutFile "~/Downloads/evernus.zip"
+Expand-Archive -Path "~/Downloads/evernus.zip" -DestinationPath "~/bin/evernus/"
 
 ### DCS
 winget install -e --id EagleDynamics.DCSWorldOpenBeta --accept-source-agreements --authentication-mode silent
