@@ -67,7 +67,9 @@ winget install -e --id Blizzard.BattleNet --source-agreements --authentication-m
 ### EVE ONLINE
 winget install -e --id CCPGames.EVEOnline --accept-source-agreements --authentication-mode silent
 Invoke-WebRequest -Uri "https://github.com/Slazanger/SMT/releases/download/SMT_141/SMT_1.41a.zip" -OutFile "~/Downloads/SMT.zip"
-Expand-Archive -Path "~/Downloads/SMT.zip" -DestinationPath "~/bin/smt"
+Expand-Archive -Path "~/Downloads/SMT.zip" -DestinationPath "~/bin/smt/"
+Invoke-WebRequest -Uri "https://github.com/Proopai/eve-o-preview/releases/download/8.0.2.1/Release-8.0.2.1-Windows.zip" -OutFile "~/Downloads/eve-o-preview.zip"
+Expand-Archive -Path "~/Downloads/eve-o-preview.zip" -DestinationPath "~/bin/eve-o-preview/"
 
 ### DCS
 winget install -e --id EagleDynamics.DCSWorldOpenBeta --accept-source-agreements --authentication-mode silent
