@@ -15,6 +15,7 @@ winget-install -Force
 ### COMMON
 winget install -e --id Google.Chrome --accept-source-agreements --authentication-mode silent
 winget install -e --id AgileBits.1Password --accept-source-agreements --authentication-mode silent
+winget install -e --id AgileBits.1Password.CLI --accept-source-agreements --authentication-mode silent
 winget install -e --id Nvidia.GeForceExperience --accept-source-agreements --authentication-mode silent
 winget install -e --id Valve.Steam --accept-source-agreements --authentication-mode silent
 winget install -e --id Yubico.YubikeyManager --accept-source-agreements --authentication-mode silent
@@ -36,33 +37,35 @@ winget install -e --id CoreyButler.NVMforWindows --accept-source-agreements --au
 winget install -e --id GnuPG.GnuPG --accept-source-agreements --authentication-mode silent
 winget install -e --id PuTTY.PuTTY --accept-source-agreements --authentication-mode silent
 winget install -e --id Mozilla.Firefox.DeveloperEdition --accept-source-agreements --authentication-mode silent
-winget install -e --id PortSwigger.BurpSuite.Community --source-agreements --authentication-mode silent
-winget install -e --id Microsoft.VisualStudioCode --source-agreements --authentication-mode silent
+winget install -e --id PortSwigger.BurpSuite.Community --accept-source-agreements --authentication-mode silent
+winget install -e --id Microsoft.VisualStudioCode --accept-source-agreementss --authentication-mode silent
+winget install -e --id Microsoft.DotNet.SDK.9 --accept-source-agreementss --authentication-mode silent
 
 ### UTILITIES
 winget install -e --id Microsoft.PowerShell --accept-source-agreements --authentication-mode silent
 winget install -e --id JanDeDobbeleer.OhMyPosh --accept-source-agreements --authentication-mode silent
 winget install -e --id Piriform.Speccy --accept-source-agreements --authentication-mode silent
 winget install -e --id WinDirStat.WinDirStat --accept-source-agreements --authentication-mode silent
-winget install -e --id Obsidian.Obsidian --source-agreements --authentication-mode silent
-winget install -e --id Mango3D.LycheeSlicer --source-agreements --authentication-mode silent
-winget install -e --id FocusriteAudioEngineeringLtd.FocusriteControl2 --source-agreements --authentication-mode silent
-winget install -e --id Audacity.Audacity --source-agreements --authentication-mode silent
+winget install -e --id Obsidian.Obsidian --accept-source-agreements --authentication-mode silent
+winget install -e --id Mango3D.LycheeSlicer --accept-source-agreements --authentication-mode silent
+winget install -e --id FocusriteAudioEngineeringLtd.FocusriteControl2 --accept-source-agreements --authentication-mode silent
+winget install -e --id Audacity.Audacity --accept-source-agreements --authentication-mode silent
+winget install -e --id RazerInc.RazerInstaller.Synapse4 --accept-source-agreements --authentication-mode silent
 
 ### ART
-winget install -e --id 9P8DVF1XW02V --source-agreements --authentication-mode silent # Affinity Photo 2
-winget install -e --id 9N2D0P16C80H --source-agreements --authentication-mode silent # Affinity Designer 2
-winget install -e --id 9NTV2DZ11KD9 --source-agreements --authentication-mode silent # Affinity Publisher 2
+winget install -e --id 9P8DVF1XW02V --accept-source-agreements --authentication-mode silent # Affinity Photo 2
+winget install -e --id 9N2D0P16C80H --accept-source-agreements --authentication-mode silent # Affinity Designer 2
+winget install -e --id 9NTV2DZ11KD9 --accept-source-agreements --authentication-mode silent # Affinity Publisher 2
 
 ############ Personal Specific Tools ############
 mkdir ~/bin/
 mkdir ~/workspaces/
 
 ### WARTHUNDER
-winget install -e --id GaijinNetwork.WarThunder --source-agreements --authentication-mode silent
+winget install -e --id GaijinNetwork.WarThunder --accept-source-agreements --authentication-mode silent
 
 ### BATTLENET
-winget install -e --id Blizzard.BattleNet --source-agreements --authentication-mode silent
+winget install -e --id Blizzard.BattleNet -l "D:/Program Files/BattleNet" --accept-source-agreements --authentication-mode silent
 
 ### EVE ONLINE
 winget install -e --id CCPGames.EVEOnline --accept-source-agreements --authentication-mode silent
