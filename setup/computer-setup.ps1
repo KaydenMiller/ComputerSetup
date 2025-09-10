@@ -40,6 +40,7 @@ winget install -e --id Mozilla.Firefox.DeveloperEdition --accept-source-agreemen
 winget install -e --id PortSwigger.BurpSuite.Community --accept-source-agreements --authentication-mode silent
 winget install -e --id Microsoft.VisualStudioCode --accept-source-agreementss --authentication-mode silent
 winget install -e --id Microsoft.DotNet.SDK.9 --accept-source-agreementss --authentication-mode silent
+winget isntall -e --id open-policy-agent.opa --accept-source-agreementss --authentication-mode silent
 
 ### UTILITIES
 winget install -e --id Microsoft.PowerShell --accept-source-agreements --authentication-mode silent
